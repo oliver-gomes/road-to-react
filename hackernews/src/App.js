@@ -24,20 +24,16 @@ const list = [
 
 class App extends Component {
   render() {
-    var helloWorld = 'Welcome to the Road to React';
-    var learn = 'Super excited to learn React';
-    var userName = {
-      firstname: 'Oliver',
-      lastname: 'Gomes'
-    }
+
     return (
       <div className="App">
-        <h2>{helloWorld}</h2>
-        <h3>{learn}</h3>
-        <h4>{`My name is ${userName.firstname} ${userName.lastname}`}</h4>
+        {list.map(function(item) {
+          return <div>{item.title}</div>;
+        })}
       </div>
     );
   }
 }
+
 
 export default App;

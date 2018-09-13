@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import SingleTodo from "./SingleTodo.js";
+
 class App extends Component {
   constructor() {
     super();
@@ -20,9 +22,10 @@ class App extends Component {
 
     this.setState({ todos: todosCopy, currentTodo: "" });
   };
+
   render() {
     let bulletTodo = this.state.todos.map((e, i) => {
-      return <li key={i}>{e}</li>;
+      return <SingleTodo todo={e} />;
     });
     return (
       <div>

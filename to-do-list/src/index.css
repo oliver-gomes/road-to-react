@@ -1,5 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: white;
+  background: rgb(133, 173, 226);
+}
+
+div {
+  margin: 50px 280px;
 }
